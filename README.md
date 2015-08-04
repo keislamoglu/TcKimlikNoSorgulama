@@ -5,9 +5,13 @@ Kullanımı:
 
 ```php
 // Boolean değer döndürür
-TcKimlikNoSorgula::tcKimlikNo('11111111111')
+if (TcKimlikNoSorgula::tcKimlikNo('11111111111')
     ->ad('İsim')
     ->soyad('Soyisim')
     ->dogumYili('1991')
-    ->dogrula();
+    ->dogrula()) {
+    echo 'Doğrulandı!';
+} else {
+    echo 'Geçersiz';
+}
 ```
