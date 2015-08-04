@@ -4,7 +4,6 @@ Php için T.C. Kimlik No Sorgulama API
 Kullanımı:
 
 ```php
-// Boolean değer döndürür
 if (TcKimlikNoSorgula::tcKimlikNo('11111111111')
     ->ad('İsim')
     ->soyad('Soyisim')
