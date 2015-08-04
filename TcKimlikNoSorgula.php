@@ -19,7 +19,7 @@ class TcKimlikNoSorgula {
      */
     public static function tcKimlikNo($tcKimlikNo) {
         $instance = new static;
-        if (strlen($tcKimlikNo) != 11)
+        if(strlen($tcKimlikNo) !=11)
             throw new \Exception('T.C. Kimlik No 11 hane olmalıdır');
         $instance->tcKimlikNo = $tcKimlikNo;
         return $instance;
@@ -56,11 +56,11 @@ class TcKimlikNoSorgula {
     }
 
     /**
-     * Doğrulama
+     * Sorgulama
      * @return bool
      * @throws \Exception
      */
-    public function dogrula() {
+    public function sorgula() {
         if (!isset($this->ad) || !isset($this->soyad) || !isset($this->dogumYili) || !isset($this->tcKimlikNo)) {
             throw new \Exception("Doğrulama için T.C. Kimlik No, Ad, Soyad, Doğum Yılı tanımlanmış olması gerekir");
         }
