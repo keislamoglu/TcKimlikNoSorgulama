@@ -14,10 +14,13 @@ class TcKimlikNoSorgula {
     /**
      * TcKimlik No
      * @param $tcKimlikNo
+     * @throws \Exception
      * @return $this
      */
     public static function tcKimlikNo($tcKimlikNo) {
         $instance = new static;
+        if (strlen($tcKimlikNo) != 11)
+            throw new \Exception('T.C. Kimlik No 11 hane olmalıdır');
         $instance->tcKimlikNo = $tcKimlikNo;
         return $instance;
     }
@@ -55,7 +58,7 @@ class TcKimlikNoSorgula {
     /**
      * Doğrulama
      * @return bool
-     * @throws Exception
+     * @throws \Exception
      */
     public function dogrula() {
         if (!isset($this->ad) || !isset($this->soyad) || !isset($this->dogumYili) || !isset($this->tcKimlikNo)) {
