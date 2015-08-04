@@ -8,8 +8,8 @@ if (TcKimlikNoSorgula::tcKimlikNo('11111111111')
     ->ad('İsim')
     ->soyad('Soyisim')
     ->dogumYili('1991')
-    ->dogrula()) {
-    echo 'Doğrulandı!';
+    ->sorgula()) {
+    echo 'Doğrulandı';
 } else {
     echo 'Geçersiz';
 }
