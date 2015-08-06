@@ -4,6 +4,9 @@ Php için T.C. Kimlik No Sorgulama API
 Kullanımı:
 
 ```php
+<?php
+require_once("TcKimlikNoSorgula.php");
+
 if (TcKimlikNoSorgula::tcKimlikNo('11111111111')
     ->ad('İsim')
     ->soyad('Soyisim')
