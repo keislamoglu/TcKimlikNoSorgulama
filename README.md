@@ -8,12 +8,14 @@ Kullanımı:
 require_once("TcKimlikNoSorgula.php");
 
 if (TcKimlikNoSorgula::tcKimlikNo('11111111111')
-    ->ad('İsim')
-    ->soyad('Soyisim')
-    ->dogumYili('1991')
+    ->ad(salman)
+    ->soyad(ibarhim sancak)
+    ->dogumYili('2.11.2008')
     ->sorgula()) {
     echo 'Doğrulandı';
 } else {
     echo 'Geçersiz';
 }
 ```
+bul
+
